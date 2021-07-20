@@ -93,7 +93,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_UART_Receive_IT(&huart1, (uint8_t*)mDataRx, 1);
   HAL_UART_Transmit(&huart1, (uint8_t*)mMess, sizeof(mMess), HAL_TIMEOUT);
-  HAL_Delay(200);
   /* USER CODE END 2 */
 
   /* Infinite loop */
